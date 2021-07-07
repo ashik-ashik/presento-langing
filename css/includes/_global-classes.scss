@@ -141,6 +141,7 @@
 }
 
 // global buttons
+.button,
 button{
   border: none;
   outline: none;
@@ -181,4 +182,9 @@ li{
 body{
   width: 100%;
   overflow-x: hidden;
+}
+
+// section default padding
+.sec{
+  padding: 50px 0;
 }

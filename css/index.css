@@ -15,7 +15,8 @@
   font-size: 11px !important;
 }
 
-.fs-13, button {
+.fs-13, .button,
+button {
   font-size: 13px !important;
 }
 
@@ -79,7 +80,8 @@
   font-weight: 700 !important;
 }
 
-.fw-9, button {
+.fw-9, .button,
+button {
   font-weight: 900 !important;
 }
 
@@ -144,6 +146,7 @@
   transition: all 400ms;
 }
 
+.button,
 button {
   border: none;
   outline: none;
@@ -186,6 +189,10 @@ li {
 body {
   width: 100%;
   overflow-x: hidden;
+}
+
+.sec {
+  padding: 50px 0;
 }
 
 #header {
@@ -300,6 +307,49 @@ body {
 }
 
 /* ! header design end */
+/* hero section start */
+#hero {
+  background: #000000ce url(../img/hero-bg.jpg) center;
+  background-blend-mode: multiply;
+  background-size: cover;
+  height: 90vh;
+}
+
+#hero .d-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#hero .d-grid .hero-title {
+  margin-bottom: 20px;
+  line-height: 1.1em;
+}
+
+#hero .d-grid h4 {
+  line-height: 1.3em;
+  margin-bottom: 20px;
+}
+
+#hero .d-grid .hero-btn {
+  color: #fff;
+  background: #E35052;
+  border: 2px solid transparent;
+  padding: 15px 35px;
+  border-radius: 5px;
+}
+
+#hero .d-grid .hero-btn:hover {
+  border-color: #fff;
+  background: transparent;
+}
+
+/* ! hero section end */
 * {
   margin: 0;
   padding: 0;

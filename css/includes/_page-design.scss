@@ -87,3 +87,40 @@
 }
 
 /* ! header design end */ 
+
+
+/* hero section start */ 
+#hero{
+  background: #000000ce url(../img/hero-bg.jpg) center;
+  background-blend-mode: multiply;
+  background-size: cover;
+  height: 90vh;
+
+  .d-grid{
+    @include grid(2, 1fr);
+    height: 100%;
+    align-items: center;
+
+    .hero-title{
+      margin-bottom: 20px;
+      line-height: 1.1em;
+    }
+    h4{
+      line-height: 1.3em;
+      margin-bottom: 20px;
+    }
+    .hero-btn{
+      color: $white;
+      background: $kom-red;
+      border: 2px solid transparent;
+      padding: 15px 35px;
+      border-radius: 5px;
+    }
+    .hero-btn:hover{
+      border-color: $white;
+      background: transparent;
+    }
+  }
+  
+}
+/* ! hero section end */ 
