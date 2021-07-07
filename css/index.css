@@ -11,6 +11,18 @@
   color: #E13E40 !important;
 }
 
+.c-ass {
+  color: #ddd !important;
+}
+
+.bg-black {
+  background: #111111 !important;
+}
+
+.bg-dark {
+  background: #1B1B1B !important;
+}
+
 .fs-11 {
   font-size: 11px !important;
 }
@@ -133,15 +145,11 @@ button {
 }
 
 *::before {
-  content: '';
-  position: absolute;
   -webkit-transition: all 400ms;
   transition: all 400ms;
 }
 
 *::after {
-  content: '';
-  position: absolute;
   -webkit-transition: all 400ms;
   transition: all 400ms;
 }
@@ -191,8 +199,50 @@ body {
   overflow-x: hidden;
 }
 
-.sec {
-  padding: 50px 0;
+.py50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.py70 {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.my10 {
+  margin: 10px 0;
+}
+
+.my15 {
+  margin: 15px 0;
+}
+
+.my20 {
+  margin: 20px 0;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.mt15 {
+  margin-top: 15px;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.mb15 {
+  margin-bottom: 15px;
+}
+
+.mb20 {
+  margin-bottom: 20px;
 }
 
 #header {
@@ -211,6 +261,7 @@ body {
   width: 100%;
   height: 2px;
   background: #E13E40;
+  position: absolute;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
   inset: 100 0 0 0;
@@ -350,6 +401,61 @@ body {
 }
 
 /* ! hero section end */
+/* about section start */
+#about {
+  margin-top: 50px;
+  -webkit-transform: skewY(-1.5deg);
+          transform: skewY(-1.5deg);
+}
+
+#about .container {
+  -webkit-transform: skewY(1.5deg);
+          transform: skewY(1.5deg);
+}
+
+#about .about-item-1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: about1;
+}
+
+#about .about-item-1 .button {
+  padding: 13px 40px;
+  border: 2px solid #E13E40;
+  background: transparent;
+  color: #fff;
+  border-radius: 20px;
+}
+
+#about .about-item-1 .button:hover {
+  background: #E13E40;
+  border-color: transparent;
+}
+
+#about .about-item-2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 3;
+  grid-area: about2;
+}
+
+#about .about-item-3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 8;
+  -ms-grid-column-span: 3;
+  grid-area: about3;
+}
+
+#about .d-grid {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'about1 about1 about1 about1 about2 about2 about2 about3 about3 about3';
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+}
+
+/* about section end */
 * {
   margin: 0;
   padding: 0;

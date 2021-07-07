@@ -124,3 +124,44 @@
   
 }
 /* ! hero section end */ 
+
+
+/* about section start */ 
+#about{
+  margin-top: 50px;
+  transform: skewY(-1.5deg);
+
+  .container{
+    transform: skewY(1.5deg);
+  }
+  .about-item-1{
+    grid-area: about1;
+
+    .button{
+      padding: 13px 40px;
+      border: 2px solid $red;
+      background: transparent;
+      color: $white;
+      border-radius: 20px;
+    }
+    .button:hover{
+      background: $red;
+      border-color: transparent;
+    }
+  }
+  .about-item-2{
+    grid-area: about2;
+  }
+  .about-item-3{
+    grid-area: about3;
+  }
+  .d-grid{
+    display: grid;
+    grid-template-areas: 
+    'about1 about1 about1 about1 about2 about2 about2 about3 about3 about3'
+    ;
+    column-gap: 50px;
+  }
+  
+}
+/* about section end */ 

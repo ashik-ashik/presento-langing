@@ -10,7 +10,15 @@
 .c-red{
   color: $red !important;
 }
-
+.c-ass{
+  color: #ddd !important;
+}
+.bg-black{
+  background: $black !important;
+}
+.bg-dark{
+  background: $dark !important;
+}
 // classes for font sizes
     // fs for [f-:font, s-: size]
 .fs-11{
@@ -120,10 +128,9 @@
   width: $width-b;
   height: $height-b;
   background: $bg-b;
+  position: absolute;
 }
 *::before{
-  content: '';
-  position: absolute;
   transition: all 400ms;
 }
 @mixin after($top-a, $left-a, $width-a, $height-a, $bg-a) {
@@ -132,11 +139,10 @@
   width: $width-a;
   height: $height-a;
   background: $bg-a;
+  position: absolute;
 }
 
 *::after{
-  content: '';
-  position: absolute;
   transition: all 400ms;
 }
 
@@ -185,6 +191,38 @@ body{
 }
 
 // section default padding
-.sec{
-  padding: 50px 0;
+.py50{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.py70{
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.my10{
+  margin: 10px 0;
+}
+.my15{
+  margin: 15px 0;
+}
+.my20{
+  margin: 20px 0;
+}
+.mt10{
+  margin-top: 10px;
+}
+.mt15{
+  margin-top: 15px;
+}
+.mt20{
+  margin-top: 20px;
+}
+.mb10{
+  margin-bottom: 10px;
+}
+.mb15{
+  margin-bottom: 15px;
+}
+.mb20{
+  margin-bottom: 20px;
 }
