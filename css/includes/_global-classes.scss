@@ -72,6 +72,38 @@
   font-weight: $fw-xb !important;
 }
 
+// container
+.container{
+  width: 85%;
+  margin: 0 auto;
+}
+
+// flexbox
+.flexing{
+  display: flex;
+}
+.justify-between{
+  justify-content: space-between;
+}
+.justify-end{
+  justify-content: flex-end;
+}
+.justify-center{
+  justify-content: center;
+}
+
+.align-center{
+  align-items: center;
+}
+.flex-50{
+  width: 49% !important;
+}
+.flex-33{
+  width: 32% !important;
+}
+.flex-25{
+  width: 24.25% !important;
+}
 
 // grid classes
 @mixin grid($num-col, $size-col) {
@@ -122,4 +154,31 @@ button{
 // global ancore tag <a>
 a{
   text-decoration: none;
+  display: inline-block;
+  transition: all 400ms;
+}
+.a-button{
+  display: inline-block;
+  background: $red;
+  color: $white;
+  border-radius: 4px;
+}
+.a-button:hover{
+  background: $white;
+  color: $red !important;
+}
+
+// order and unorder list
+.list-none{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li{
+  margin: 0;
+  position: relative;
+}
+body{
+  width: 100%;
+  overflow-x: hidden;
 }

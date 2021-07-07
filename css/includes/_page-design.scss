@@ -1,0 +1,89 @@
+
+
+// header design start
+#header{
+  background: $dark;
+  padding: 20px 0;
+  overflow-x: hidden;
+}
+
+#header .menu a{
+  padding: 10px 13px;
+}
+#header .menu li:not(.not):before{
+  @include before(100%, 0%, 100%, 2px, $red);
+  transform: scaleX(0);
+  inset: 100 0 0 0;
+  transition: transform 400ms;
+  transform-origin: top right;
+}
+#header .menu li.active::before{
+  transform: scaleX(1);
+}
+#header .menu li:hover::before{
+  transform: scaleX(1) !important;
+  transform-origin: bottom left;
+}
+.nav-togle.bx{
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+}
+#nav-in{
+  display: none;
+}
+#mini-menu{
+  width: 300px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: #000;
+  height: 100vh;
+  transform: translateX(100%);
+  transition: transform 1s, opacity 800ms;
+  opacity: 0;
+  li{
+    
+    a{
+      padding: 10px 30px;
+      transition: 400ms;
+    }
+  }
+  li:hover a{
+    color: $red !important;
+  }
+  li:last-child{
+    padding-left: 30px;
+  }
+  .head-of-menu{
+    position: relative;
+    width: 100%;
+    background: #000000;
+    height: 69px;
+    margin-bottom: 20px;
+     i{
+      position: absolute;
+      top: 50%;
+      right: 40px;
+      margin-top: -15px;
+      transform: translateY(-50%);
+    }
+  }
+}
+#mini-menu.show{
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+
+// menu responsive
+@media screen and (max-width: 992px) {
+  #header .menu{
+    display: none;
+  }
+  #nav-in{
+    display: block;
+  }
+}
+
+/* ! header design end */ 
