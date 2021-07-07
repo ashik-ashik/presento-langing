@@ -1,0 +1,17 @@
+
+// main css file
+
+// import goole fonts
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+
+// global reset
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// import my other scss files
+@import './includes/variables';
+@import './includes/global-classes';
+@import './includes/page-design';

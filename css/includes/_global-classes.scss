@@ -1,0 +1,125 @@
+// global classes store here
+
+// font colors [c for color]
+.c-white{
+  color: $white !important;
+}
+.c-dark{
+  color: $color-h !important;
+}
+.c-red{
+  color: $red !important;
+}
+
+// classes for font sizes
+    // fs for [f-:font, s-: size]
+.fs-11{
+  font-size: $fs-11 !important;
+}
+.fs-13{
+  font-size: $fs-13 !important;
+}
+.fs-14{
+  font-size: $fs-14 !important;
+}
+.fs-15{
+  font-size: $fs-15 !important;
+}
+.fs-16{
+  font-size: $fs-16 !important;
+}
+.fs-18{
+  font-size: $fs-18 !important;
+}
+.fs-20{
+  font-size: $fs-20 !important;
+}
+.fs-24{
+  font-size: $fs-24 !important;
+}
+.fs-26{
+  font-size: $fs-26 !important;
+}
+.fs-32{
+  font-size: $fs-32 !important;
+}
+.fs-34{
+  font-size: $fs-34 !important;
+}
+.fs-36{
+  font-size: $fs-36 !important;
+}
+.fs-48{
+  font-size: $fs-48 !important;
+}
+
+
+// font-weight class
+    // fw for [f-: font; w-: weight]
+.fw-4{
+  font-weight: $fw-n !important;
+}
+.fw-5{
+  font-weight: $fw-m !important;
+}
+.fw-6{
+  font-weight: $fw-mb !important;
+}
+.fw-7{
+  font-weight: $fw-b !important;
+}
+.fw-9{
+  font-weight: $fw-xb !important;
+}
+
+
+// grid classes
+@mixin grid($num-col, $size-col) {
+  display: grid;
+  grid-template-columns: repeat($num-col, $size-col);
+}
+
+
+// global before after
+
+@mixin before($top-b, $left-b, $width-b, $height-b, $bg-b) {
+  top: $top-b;
+  left: $left-b;
+  width: $width-b;
+  height: $height-b;
+  background: $bg-b;
+}
+*::before{
+  content: '';
+  position: absolute;
+  transition: all 400ms;
+}
+@mixin after($top-a, $left-a, $width-a, $height-a, $bg-a) {
+  top: $top-a;
+  left: $left-a;
+  width: $width-a;
+  height: $height-a;
+  background: $bg-a;
+}
+
+*::after{
+  content: '';
+  position: absolute;
+  transition: all 400ms;
+}
+
+// global buttons
+button{
+  border: none;
+  outline: none;
+  padding: 10px 30px;
+  transition: all 400ms;
+  cursor: pointer;
+  @extend .fs-13;
+  @extend .fw-9;
+}
+
+// global ancore tag <a>
+a{
+  text-decoration: none;
+}
