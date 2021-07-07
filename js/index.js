@@ -11,3 +11,16 @@ navToggleIn.addEventListener('click', function(){
 navToggleOut.addEventListener('click', function(){
   menu.classList.remove('show');
 });
+
+
+// tabs script
+
+let ul = document.querySelector('.tabs-tab');
+let tab = document.querySelectorAll('.tab');
+tab.forEach(el => {
+  el.addEventListener('click', function(){
+    ul.querySelector('.active').classList.remove('active');
+
+    el.classList.add('active')
+  })
+})

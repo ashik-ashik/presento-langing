@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap");
 .c-white {
   color: #fff !important;
@@ -44,7 +45,7 @@ button {
   font-size: 16px !important;
 }
 
-.fs-18 {
+.fs-18, #tabs ul.d-grid [class*='item'] span {
   font-size: 18px !important;
 }
 
@@ -60,7 +61,7 @@ button {
   font-size: 26px !important;
 }
 
-.fs-32 {
+.fs-32, #happy-client .icon-box h4 {
   font-size: 32px !important;
 }
 
@@ -88,7 +89,7 @@ button {
   font-weight: 600 !important;
 }
 
-.fw-7 {
+.fw-7, #happy-client .icon-box h4, #tabs ul.d-grid [class*='item'] span {
   font-weight: 700 !important;
 }
 
@@ -233,7 +234,11 @@ body {
   margin-top: 20px;
 }
 
-.mb10 {
+.mt50 {
+  margin-top: 50px;
+}
+
+.mb10, #happy-client .icon-box h4 {
   margin-bottom: 10px;
 }
 
@@ -404,13 +409,13 @@ body {
 /* about section start */
 #about {
   margin-top: 50px;
-  -webkit-transform: skewY(-1.5deg);
-          transform: skewY(-1.5deg);
+  -webkit-transform: skewY(-1.7deg);
+          transform: skewY(-1.7deg);
 }
 
 #about .container {
-  -webkit-transform: skewY(1.5deg);
-          transform: skewY(1.5deg);
+  -webkit-transform: skewY(1.7deg);
+          transform: skewY(1.7deg);
 }
 
 #about .about-item-1 {
@@ -456,6 +461,90 @@ body {
 }
 
 /* about section end */
+/* happy client section start */
+#happy-client .d-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+#happy-client .icon-box {
+  text-align: center;
+  -webkit-box-shadow: 0px 10px 40px #00000033;
+          box-shadow: 0px 10px 40px #00000033;
+  padding: 50px 30px 30px;
+  position: relative;
+}
+
+#happy-client .icon-box h4 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#happy-client .icon-box i {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #fff;
+  -webkit-box-shadow: 0px 7px 30px #00000033;
+          box-shadow: 0px 7px 30px #00000033;
+  padding: 11px 13px;
+  display: inline-block;
+  border-radius: 50%;
+  font-size: 25px;
+}
+
+/* happy client section end */
+/* Tabs section Start */
+#tabs ul.d-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (20%)[4];
+      grid-template-columns: repeat(4, 20%);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#tabs ul.d-grid [class*='item'] {
+  padding: 20px 15px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40px auto;
+      grid-template-columns: 40px auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+}
+
+#tabs ul.d-grid [class*='item']:hover {
+  border-color: #E13E40;
+  color: #E13E40;
+}
+
+#tabs ul.d-grid [class*='item'] span {
+  padding-left: 10px;
+}
+
+#tabs ul.d-grid [class*='item'] i {
+  font-size: 30px;
+}
+
+#tabs ul.d-grid [class*='item'].active {
+  background: #E35052;
+  color: #fff;
+  border-color: transparent;
+}
+
+/* Tabs section end */
 * {
   margin: 0;
   padding: 0;
