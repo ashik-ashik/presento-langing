@@ -17,6 +17,10 @@
   color: #ddd !important;
 }
 
+.bg-red {
+  background: #E13E40 !important;
+}
+
 .bg-black {
   background: #111111 !important;
 }
@@ -808,6 +812,92 @@ img {
 }
 
 /* testimonials section end */
+/* Pricing section Start */
+#pricing-table {
+  -webkit-transform: skewY(-1.7deg);
+          transform: skewY(-1.7deg);
+}
+
+#pricing-table .container {
+  -webkit-transform: skewY(1.7deg);
+          transform: skewY(1.7deg);
+}
+
+#pricing-table .price-box {
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#pricing-table .price-box h4:first-child {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+#pricing-table .price sup,
+#pricing-table .price sub {
+  font-size: 16px;
+  color: #fff;
+  margin: 0 5px;
+}
+
+#pricing-table .price span {
+  font-size: 40px;
+  color: #fff;
+  font-family: 'Open sans';
+  text-transform: uppercase;
+}
+
+#pricing-table ul {
+  text-align: left;
+  width: 60%;
+  margin: 25px auto;
+}
+
+#pricing-table ul li {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+#pricing-table ul li .bx {
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+#pricing-table ul li .bxs-check-circle {
+  color: #14ac00;
+}
+
+#pricing-table ul li .bxs-x-circle {
+  color: yellow;
+}
+
+#pricing-table .d-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+#pricing-table .a-button {
+  background: transparent !important;
+  border: 2px solid #bdbdbd;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 15px 40px;
+  margin-top: 50px;
+  color: #fff;
+}
+
+#pricing-table .a-button:hover {
+  color: #fff !important;
+  border-color: #fff;
+}
+
+/* Pricing section end */
 * {
   margin: 0;
   padding: 0;

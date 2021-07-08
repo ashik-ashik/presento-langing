@@ -420,4 +420,75 @@ img{
   
   
 }
-/* testimonials section end */ 
+/* testimonials section end */
+
+
+
+/* Pricing section Start */
+#pricing-table{
+  transform: skewY(-1.7deg);
+  .container{
+    transform: skewY(1.7deg);
+  }
+  .price-box{
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px;
+
+    h4:first-child{
+      text-transform: uppercase;
+      font-size: $fs-20;
+      margin-bottom: 20px;
+    }
+  }
+  .price sup,
+  .price sub{
+    font-size: 16px;
+    color: #fff;
+    margin: 0 5px;
+  }
+  .price span{
+    font-size: 40px;
+    color: #fff;
+    font-family: 'Open sans';
+    text-transform: uppercase;
+  }
+  ul{
+    text-align: left;
+    width: 60%;
+    margin: 25px auto;
+  }
+  ul li{
+    margin-bottom: 10px;
+    color: $white;
+    .bx{
+      margin-right: 5px;
+      font-size: $fs-18;
+    }
+    .bxs-check-circle{
+      color: #14ac00;
+    }
+    .bxs-x-circle{
+      color: yellow;
+    }
+  }
+  .d-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+  }
+  .a-button{
+    background: transparent !important;
+    border: 2px solid #bdbdbd;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 15px 40px;
+    margin-top: 50px;
+    color: $white;
+  }
+  .a-button:hover{
+    color: $white !important;
+    border-color: #fff;
+  }
+}
+/* Pricing section end */
