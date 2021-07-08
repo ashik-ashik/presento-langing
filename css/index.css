@@ -268,6 +268,8 @@ body {
   position: relative;
   padding-bottom: 10px;
   margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 36px !important;
 }
 
 .section-title h2::before {
@@ -298,13 +300,14 @@ body {
   padding: 10px 13px;
 }
 
-#header .menu li:not(.not):before {
+#header .menu li:not(.not)::before {
   top: 100%;
   left: 0%;
   width: 100%;
   height: 2px;
   background: #E13E40;
   position: absolute;
+  content: '';
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
   inset: 100 0 0 0;
@@ -756,6 +759,55 @@ img {
 }
 
 /* portfolio section end */
+/* testimonials section Start */
+#testimonial .d-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+}
+
+#testimonial .box {
+  -webkit-box-shadow: 0px 3px 15px #00000025;
+          box-shadow: 0px 3px 15px #00000025;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+#testimonial .box .header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 80px 1fr;
+      grid-template-columns: 80px 1fr;
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#testimonial .box .header h4 {
+  font-size: 20px;
+  margin-bottom: 7px;
+}
+
+#testimonial .box .header img {
+  border-radius: 10px;
+}
+
+#testimonial .box p {
+  position: relative;
+  line-height: 1.5em;
+  font-size: 18px;
+}
+
+#testimonial .box p .bx {
+  font-size: 30px;
+  color: #ff9999;
+}
+
+/* testimonials section end */
 * {
   margin: 0;
   padding: 0;
