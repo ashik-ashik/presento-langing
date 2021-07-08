@@ -315,3 +315,66 @@ img{
   
 }
 /* services section end */ 
+
+
+
+
+/* portfolio section start */ 
+#portfolio{
+  .d-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  .box{
+    position: relative;
+    transition: 500ms;
+    overflow: hidden;
+    .ovarlay{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: 500ms;
+      background: #0000008f;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-end;
+      flex-direction: column;
+      padding: 15px;
+
+      h5{
+        font-size: 20px;
+        color: #fff;
+      }
+      h6{
+        font-size: 16px;
+        color: #fff;
+        margin-top: 10px;
+      }
+      p{
+        margin-top: 13px;
+      }
+      .bx{
+        font-size: 25px;
+        color: #eee;
+      }
+      .bx:hover{
+        color: #fff;
+      }
+    }
+  }
+  .box:hover .ovarlay{
+    opacity: 1;
+  }
+  .box img{
+    transition: 500ms;
+  }
+  .box:hover img{
+    transform: scale(1.3) rotate(1.5deg);
+  }
+  
+}
+/* portfolio section end */ 

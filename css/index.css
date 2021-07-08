@@ -103,6 +103,10 @@ button {
   font-style: oblique;
 }
 
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
 .container {
   width: 85%;
   margin: 0 auto;
@@ -671,6 +675,87 @@ img {
 }
 
 /* services section end */
+/* portfolio section start */
+#portfolio .d-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+#portfolio .box {
+  position: relative;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  overflow: hidden;
+}
+
+#portfolio .box .ovarlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  background: #0000008f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px;
+}
+
+#portfolio .box .ovarlay h5 {
+  font-size: 20px;
+  color: #fff;
+}
+
+#portfolio .box .ovarlay h6 {
+  font-size: 16px;
+  color: #fff;
+  margin-top: 10px;
+}
+
+#portfolio .box .ovarlay p {
+  margin-top: 13px;
+}
+
+#portfolio .box .ovarlay .bx {
+  font-size: 25px;
+  color: #eee;
+}
+
+#portfolio .box .ovarlay .bx:hover {
+  color: #fff;
+}
+
+#portfolio .box:hover .ovarlay {
+  opacity: 1;
+}
+
+#portfolio .box img {
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+#portfolio .box:hover img {
+  -webkit-transform: scale(1.3) rotate(1.5deg);
+          transform: scale(1.3) rotate(1.5deg);
+}
+
+/* portfolio section end */
 * {
   margin: 0;
   padding: 0;
