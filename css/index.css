@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap");
 .c-white {
@@ -252,6 +253,35 @@ body {
 
 .mb20 {
   margin-bottom: 20px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-title h2 {
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.section-title h2::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 80px;
+  height: 2px;
+  background: #E13E40;
+}
+
+.section-title p {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5em;
 }
 
 #header {
@@ -560,7 +590,6 @@ body {
 }
 
 #tabs .tab-content.show {
-  height: 300px;
   opacity: 1;
   -webkit-transition: opacity all 800ms;
   transition: opacity all 800ms;
@@ -581,6 +610,67 @@ img {
 }
 
 /* Tabs section end */
+/* services section start */
+#service {
+  -webkit-transform: skewY(-1.7deg);
+          transform: skewY(-1.7deg);
+}
+
+#service .container {
+  -webkit-transform: skewY(1.7deg);
+          transform: skewY(1.7deg);
+}
+
+#service .d-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+#service .box {
+  padding: 30px 20px;
+  background: #2b2b2b6b;
+  border-radius: 6px;
+}
+
+#service .box .text h4 {
+  margin-bottom: 15px;
+}
+
+#service .box .text h4 a {
+  color: #fff;
+}
+
+#service .box .text h4 a:hover {
+  color: #fff;
+  text-decoration: underline !important;
+}
+
+#service .box .text p {
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#service .box.d-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40px auto;
+      grid-template-columns: 40px auto;
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#service .box .bi {
+  font-size: 32px;
+  color: #E13E40;
+}
+
+/* services section end */
 * {
   margin: 0;
   padding: 0;

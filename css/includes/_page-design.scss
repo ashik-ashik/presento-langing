@@ -247,7 +247,6 @@
     transition: opacity all 800ms;
   }
   .tab-content.show{
-    height: 300px;
     opacity: 1;
     transition: opacity all 800ms;
     display: block;
@@ -267,3 +266,52 @@ img{
 /* Tabs section end */ 
 
 
+
+
+/* services section start */ 
+#service{
+  transform: skewY(-1.7deg);
+
+  .container{
+  transform: skewY(1.7deg);
+  }
+  .d-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  .box{
+    padding: 30px 20px;
+    background: #2b2b2b6b;
+    border-radius: 6px;
+
+    .text{
+      h4{
+        margin-bottom: 15px;
+      }
+      h4 a{
+        color: $white;
+      }
+      h4 a:hover{
+        color: $white;
+        text-decoration: underline !important;
+      }
+      p{
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif;
+      }
+    }
+  }
+  .box.d-grid{
+    display: grid;
+    grid-template-columns: 40px auto;
+    column-gap: 15px;
+    align-items: center;
+  }
+  .box .bi{
+    font-size: 32px;
+    color: $red;
+  }
+  
+}
+/* services section end */ 
