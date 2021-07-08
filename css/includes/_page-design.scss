@@ -156,7 +156,7 @@
     grid-area: about3;
   }
   .d-grid{
-    display: grid;
+    
     grid-template-areas: 
     'about1 about1 about1 about1 about2 about2 about2 about3 about3 about3'
     ;
@@ -171,7 +171,7 @@
 /* happy client section start */ 
 #happy-client{
   .d-grid{
-    display: grid;
+    
     grid-template-columns: repeat(4, 1fr);
     column-gap: 30px;
   }
@@ -209,7 +209,7 @@
 #tabs{
   padding: 50px 0;
   ul.d-grid{
-    display: grid;
+    
     grid-template-columns: repeat(4, 20%);
     justify-content: space-between;
 
@@ -254,7 +254,7 @@
 
 
   .d-grid{
-    display: grid;
+    
     grid-template-columns: 1fr 1fr;
     column-gap: 40px;
   }
@@ -276,7 +276,6 @@ img{
   transform: skewY(1.7deg);
   }
   .d-grid{
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
   }
@@ -303,7 +302,7 @@ img{
     }
   }
   .box.d-grid{
-    display: grid;
+    
     grid-template-columns: 40px auto;
     column-gap: 15px;
     align-items: center;
@@ -322,7 +321,7 @@ img{
 /* portfolio section start */ 
 #portfolio{
   .d-grid{
-    display: grid;
+    
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
   }
@@ -386,7 +385,7 @@ img{
 #testimonial{
   .d-grid{
 
-    display: grid;
+    
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 40px;
   }
@@ -473,7 +472,7 @@ img{
     }
   }
   .d-grid{
-    display: grid;
+    
     grid-template-columns: repeat(3, 1fr);
     column-gap: 30px;
   }
@@ -503,7 +502,7 @@ img{
   transition: 2.3s;
   margin-top: -20px;
   .d-grid{
-    display: grid;
+    
     grid-template-columns: auto auto;
     align-items: center;
     height: 100%;
@@ -538,7 +537,7 @@ img{
       transform: skewY(1.7deg);
     }
     .d-grid{
-      display: grid;
+      
       grid-template-columns: repeat(4, 1fr);
       column-gap: 30px;
     }
@@ -618,4 +617,87 @@ img{
       }
     }
 }
+
 /* team section end */
+
+
+
+/* contact section start */
+#contact{
+  .box-1{grid-area: box1;}
+  .box-2{grid-area: box2;}
+  .box-3{grid-area: box3;}
+  .box-4{grid-area: box4;}
+  .d-grid{
+    grid-template-areas: 
+      'box1 box1 box4 box4'
+      'box2 box3 box4 box4'
+    ;
+    grid-gap: 20px;
+  }
+  .box{
+    box-shadow: 0px 7px 20px #00000025;
+    padding: 35px;
+  }
+  .box-4{
+    .d-grid{
+      grid-template-columns: 50% 50%;
+      width: 100%;
+      grid-gap: 0;
+      .form-field:first-child{
+        padding-right: 5px;
+      }
+      .form-field:last-child{
+        padding-left: 5px;
+      }
+    }
+    label{
+      display: block;
+      font-size: 12px;
+      font-family: 'Montserrat';
+      margin-bottom: 5px;
+      font-weight: $fw-mb;
+    }
+    .input-field{
+      outline: none;
+      border: 1px solid #ccc;
+      padding: 10px 15px;
+      width: 100%;
+    }
+    .input-field:focus{
+      border-color: $red;
+    }
+    .last{
+      text-align: center;
+    }
+    input[type='submit']{
+      padding: 15px 35px;
+      background: $red;
+      color: $white;
+      font-size: $fs-15;
+      letter-spacing: 1px;
+    }
+    input[type='submit']:hover{
+      background: $kom-red;
+    }
+  }
+
+  .box:not(.box-4){
+    text-align: center;
+    .bx{
+      font-size: 26px;
+      border: 2px dashed $red;
+      border-radius: 50%;
+      padding: 10px;
+    }
+    h4{
+      margin: 20px 0 10px;
+      font-size: $fs-20;
+    }
+    p{
+      font-size: $fs-14;
+      font-weight: $fw-5;
+    }
+  }
+}
+/* contact section end */

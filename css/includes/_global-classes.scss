@@ -126,7 +126,9 @@ p{
   display: grid;
   grid-template-columns: repeat($num-col, $size-col);
 }
-
+.d-grid{
+  display: grid;
+}
 
 // global before after
 
@@ -226,6 +228,9 @@ body{
 }
 .mt20{
   margin-top: 20px;
+}
+.mt40{
+  margin-top: 40px !important;
 }
 .mt50{
   margin-top: 50px;

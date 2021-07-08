@@ -158,6 +158,11 @@ p {
   width: 24.25% !important;
 }
 
+.d-grid {
+  display: -ms-grid;
+  display: grid;
+}
+
 *::before {
   -webkit-transition: all 400ms;
   transition: all 400ms;
@@ -245,6 +250,10 @@ body {
 
 .mt20 {
   margin-top: 20px;
+}
+
+.mt40 {
+  margin-top: 40px !important;
 }
 
 .mt50 {
@@ -498,8 +507,6 @@ body {
 }
 
 #about .d-grid {
-  display: -ms-grid;
-  display: grid;
       grid-template-areas: 'about1 about1 about1 about1 about2 about2 about2 about3 about3 about3';
   -webkit-column-gap: 50px;
           column-gap: 50px;
@@ -508,8 +515,6 @@ body {
 /* about section end */
 /* happy client section start */
 #happy-client .d-grid {
-  display: -ms-grid;
-  display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   -webkit-column-gap: 30px;
@@ -550,8 +555,6 @@ body {
 }
 
 #tabs ul.d-grid {
-  display: -ms-grid;
-  display: grid;
   -ms-grid-columns: (20%)[4];
       grid-template-columns: repeat(4, 20%);
   -webkit-box-pack: justify;
@@ -608,8 +611,6 @@ body {
 }
 
 #tabs .d-grid {
-  display: -ms-grid;
-  display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   -webkit-column-gap: 40px;
@@ -633,8 +634,6 @@ img {
 }
 
 #service .d-grid {
-  display: -ms-grid;
-  display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
@@ -665,8 +664,6 @@ img {
 }
 
 #service .box.d-grid {
-  display: -ms-grid;
-  display: grid;
   -ms-grid-columns: 40px auto;
       grid-template-columns: 40px auto;
   -webkit-column-gap: 15px;
@@ -684,8 +681,6 @@ img {
 /* services section end */
 /* portfolio section start */
 #portfolio .d-grid {
-  display: -ms-grid;
-  display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
@@ -765,8 +760,6 @@ img {
 /* portfolio section end */
 /* testimonials section Start */
 #testimonial .d-grid {
-  display: -ms-grid;
-  display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   grid-gap: 40px;
@@ -874,8 +867,6 @@ img {
 }
 
 #pricing-table .d-grid {
-  display: -ms-grid;
-  display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   -webkit-column-gap: 30px;
@@ -909,8 +900,6 @@ img {
 }
 
 #cta .d-grid {
-  display: -ms-grid;
-  display: grid;
   -ms-grid-columns: auto auto;
       grid-template-columns: auto auto;
   -webkit-box-align: center;
@@ -955,8 +944,6 @@ img {
 }
 
 #team .d-grid {
-  display: -ms-grid;
-  display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   -webkit-column-gap: 30px;
@@ -1053,6 +1040,116 @@ img {
 }
 
 /* team section end */
+/* contact section start */
+#contact .box-1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: box1;
+}
+
+#contact .box-2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: box2;
+}
+
+#contact .box-3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: box3;
+}
+
+#contact .box-4 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: box4;
+}
+
+#contact .d-grid {
+      grid-template-areas: 'box1 box1 box4 box4' 'box2 box3 box4 box4';
+  grid-gap: 20px;
+}
+
+#contact .box {
+  -webkit-box-shadow: 0px 7px 20px #00000025;
+          box-shadow: 0px 7px 20px #00000025;
+  padding: 35px;
+}
+
+#contact .box-4 .d-grid {
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  width: 100%;
+  grid-gap: 0;
+}
+
+#contact .box-4 .d-grid .form-field:first-child {
+  padding-right: 5px;
+}
+
+#contact .box-4 .d-grid .form-field:last-child {
+  padding-left: 5px;
+}
+
+#contact .box-4 label {
+  display: block;
+  font-size: 12px;
+  font-family: 'Montserrat';
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+#contact .box-4 .input-field {
+  outline: none;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  width: 100%;
+}
+
+#contact .box-4 .input-field:focus {
+  border-color: #E13E40;
+}
+
+#contact .box-4 .last {
+  text-align: center;
+}
+
+#contact .box-4 input[type='submit'] {
+  padding: 15px 35px;
+  background: #E13E40;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+#contact .box-4 input[type='submit']:hover {
+  background: #E35052;
+}
+
+#contact .box:not(.box-4) {
+  text-align: center;
+}
+
+#contact .box:not(.box-4) .bx {
+  font-size: 40px;
+  border: 2px dashed #E13E40;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+#contact .box:not(.box-4) h4 {
+  margin: 20px 0 10px;
+  font-size: 20px;
+}
+
+#contact .box:not(.box-4) p {
+  font-size: 14px;
+}
+
+/* contact section end */
 * {
   margin: 0;
   padding: 0;
