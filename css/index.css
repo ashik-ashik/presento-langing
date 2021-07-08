@@ -1134,7 +1134,7 @@ img {
 }
 
 #contact .box:not(.box-4) .bx {
-  font-size: 40px;
+  font-size: 26px;
   border: 2px dashed #E13E40;
   border-radius: 50%;
   padding: 10px;
@@ -1147,9 +1147,110 @@ img {
 
 #contact .box:not(.box-4) p {
   font-size: 14px;
+  font-weight: 500;
 }
 
 /* contact section end */
+/* Footer section Start */
+#footer .d-grid {
+  -ms-grid-columns: 1.3fr 1fr 1fr 1.7fr;
+      grid-template-columns: 1.3fr 1fr 1fr 1.7fr;
+}
+
+#footer .footer-item h4 {
+  font-size: 20px;
+}
+
+#footer .footer-item li {
+  margin-bottom: 10px;
+}
+
+#footer .footer-item a {
+  color: #eee;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#footer .footer-item a .bx {
+  margin-right: 6px;
+}
+
+#footer .footer-item a:hover {
+  color: #E35052;
+}
+
+#footer .footer-item input {
+  outline: none;
+  border: none;
+  padding: 10px 12px;
+}
+
+#footer .footer-item input[type='submit'] {
+  margin-left: -5px;
+  background: #E13E40;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: #fff;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+#footer .footer-item #subscribe {
+  width: 70%;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+#footer .footer-item #subscribe:focus {
+  border: 1px solid #E13E40;
+}
+
+#footer .copy-right {
+  padding: 20px 0;
+}
+
+#footer .copy-right .d-grid {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#footer .copy-right p, #footer .copy-right li {
+  font-family: 'Montserrat';
+}
+
+#footer .copy-right p {
+  line-height: 1.6em;
+}
+
+#footer .copy-right .social-media ul {
+  text-align: end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#footer .copy-right .social-media a {
+  padding: 7px 10px;
+  color: #fff;
+  background: #1B1B1B;
+  font-size: 20px;
+  margin: 0 7px;
+  border-radius: 5px;
+}
+
+#footer .copy-right .social-media a:hover {
+  background: #E13E40;
+}
+
+/* Footer section end */
 * {
   margin: 0;
   padding: 0;
