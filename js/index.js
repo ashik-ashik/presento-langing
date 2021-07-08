@@ -23,4 +23,36 @@ tab.forEach(el => {
 
     el.classList.add('active')
   })
-})
+});
+
+let tabContent1 = document.querySelector('#tab-content1');
+let tabContent2 = document.querySelector('#tab-content2');
+let tabContent3 = document.querySelector('#tab-content3');
+let tabContent4 = document.querySelector('#tab-content4');
+
+function showTab(tabNO){
+
+    tabContent1.classList.remove('show');
+    tabContent2.classList.remove('show');
+    tabContent3.classList.remove('show');
+    tabContent4.classList.remove('show');
+
+    switch(tabNO){
+      case 1:
+        tabContent1.classList.add('show');
+        break;
+        
+      case 2:
+        tabContent2.classList.add('show');
+        break;
+
+      case 3:
+        tabContent3.classList.add('show');
+        break;
+
+      case 4:
+        tabContent4.classList.add('show');
+        break;
+    }
+
+ }

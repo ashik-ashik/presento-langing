@@ -98,6 +98,10 @@ button {
   font-weight: 900 !important;
 }
 
+.f-italic {
+  font-style: oblique;
+}
+
 .container {
   width: 85%;
   margin: 0 auto;
@@ -500,6 +504,10 @@ body {
 
 /* happy client section end */
 /* Tabs section Start */
+#tabs {
+  padding: 50px 0;
+}
+
 #tabs ul.d-grid {
   display: -ms-grid;
   display: grid;
@@ -542,6 +550,34 @@ body {
   background: #E35052;
   color: #fff;
   border-color: transparent;
+}
+
+#tabs .tab-content {
+  display: none;
+  opacity: 0;
+  -webkit-transition: opacity all 800ms;
+  transition: opacity all 800ms;
+}
+
+#tabs .tab-content.show {
+  height: 300px;
+  opacity: 1;
+  -webkit-transition: opacity all 800ms;
+  transition: opacity all 800ms;
+  display: block;
+}
+
+#tabs .d-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 40px;
+          column-gap: 40px;
+}
+
+img {
+  max-width: 100%;
 }
 
 /* Tabs section end */

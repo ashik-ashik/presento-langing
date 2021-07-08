@@ -207,6 +207,7 @@
 
 /* Tabs section Start */ 
 #tabs{
+  padding: 50px 0;
   ul.d-grid{
     display: grid;
     grid-template-columns: repeat(4, 20%);
@@ -239,7 +240,30 @@
       border-color: transparent;
     }
   }
+
+  .tab-content{
+    display: none;
+    opacity: 0;
+    transition: opacity all 800ms;
+  }
+  .tab-content.show{
+    height: 300px;
+    opacity: 1;
+    transition: opacity all 800ms;
+    display: block;
+  }
+
+
+  .d-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+  }
 }
+img{
+  max-width: 100%;
+}
+
 /* Tabs section end */ 
 
 
